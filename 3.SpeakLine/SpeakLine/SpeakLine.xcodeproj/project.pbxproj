@@ -12,6 +12,7 @@
 		634BFF5B1B5B49DA00BEEB01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634BFF591B5B49DA00BEEB01 /* MainMenu.xib */; };
 		634BFF641B5B4AF500BEEB01 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */; };
 		634BFF651B5B4AF500BEEB01 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */; };
+		63E139A21B5BC37F00694937 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63E139A11B5BC37F00694937 /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		634BFF5C1B5B49DA00BEEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		63E139A11B5BC37F00694937 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				634BFF551B5B49DA00BEEB01 /* AppDelegate.swift */,
 				634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */,
 				634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */,
+				63E139A11B5BC37F00694937 /* test.txt */,
 				634BFF571B5B49DA00BEEB01 /* Assets.xcassets */,
 				634BFF591B5B49DA00BEEB01 /* MainMenu.xib */,
 				634BFF5C1B5B49DA00BEEB01 /* Info.plist */,
@@ -123,6 +126,7 @@
 			files = (
 				634BFF581B5B49DA00BEEB01 /* Assets.xcassets in Resources */,
 				634BFF651B5B4AF500BEEB01 /* MainWindowController.xib in Resources */,
+				63E139A21B5BC37F00694937 /* test.txt in Resources */,
 				634BFF5B1B5B49DA00BEEB01 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +280,7 @@
 				634BFF611B5B49DA00BEEB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
