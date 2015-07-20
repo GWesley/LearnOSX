@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Employee: NSObject {
+class Employee: NSObject, NSCoding {
     var name: String? = "NewEmployee"
     var raise: Float = 0.00
     
@@ -23,5 +23,23 @@ class Employee: NSObject {
             }
         }
 
+    }
+    
+    override init() {
+        super.init()
+    }
+    
+    // MARK: - NSCoding
+    required init?(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObjectForKey("name") as! String?
+        raise = aDecoder.decodeFloatForKey("raise")
+        super.init()
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        if let name = name {
+            aCoder.encodeObject(name, forKey: "name")
+        }
+        aCoder.encodeFloat(raise, forKey: "raise")
     }
 }

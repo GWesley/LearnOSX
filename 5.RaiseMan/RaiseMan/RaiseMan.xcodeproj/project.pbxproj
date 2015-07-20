@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63B3BF411B5D39A70011109F /* txt.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF401B5D39A70011109F /* txt.icns */; };
 		63E139CE1B5BE87900694937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E139CD1B5BE87900694937 /* AppDelegate.swift */; };
 		63E139D01B5BE87900694937 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E139CF1B5BE87900694937 /* Document.swift */; };
 		63E139D31B5BE87900694937 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E139D11B5BE87900694937 /* Document.xib */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63B3BF401B5D39A70011109F /* txt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = txt.icns; sourceTree = "<group>"; };
 		63E139CA1B5BE87900694937 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E139CD1B5BE87900694937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E139CF1B5BE87900694937 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -59,10 +61,11 @@
 				63E139CD1B5BE87900694937 /* AppDelegate.swift */,
 				63E139CF1B5BE87900694937 /* Document.swift */,
 				63E139D11B5BE87900694937 /* Document.xib */,
+				63E139DF1B5BEAD200694937 /* Employee.swift */,
 				63E139D41B5BE87900694937 /* Assets.xcassets */,
 				63E139D61B5BE87900694937 /* MainMenu.xib */,
 				63E139D91B5BE87900694937 /* Info.plist */,
-				63E139DF1B5BEAD200694937 /* Employee.swift */,
+				63B3BF401B5D39A70011109F /* txt.icns */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 				63E139D51B5BE87900694937 /* Assets.xcassets in Resources */,
 				63E139D31B5BE87900694937 /* Document.xib in Resources */,
 				63E139D81B5BE87900694937 /* MainMenu.xib in Resources */,
+				63B3BF411B5D39A70011109F /* txt.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				63E139DE1B5BE87900694937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
