@@ -8,13 +8,14 @@
 
 import Cocoa
 
-class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSTableViewDataSource, NSTableViewDelegate {
+class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSTableViewDataSource, NSTableViewDelegate, NSTextFieldDelegate {
     
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakBtn: NSButton!
     @IBOutlet weak var stopBtn: NSButton!
     @IBOutlet weak var tableView: NSTableView!
     
+    let preferenceManager = PreferenceManager()
     let speechSynth = NSSpeechSynthesizer()
     let voices = NSSpeechSynthesizer.availableVoices()
     var isStarted: Bool = false {
@@ -32,12 +33,14 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NST
         updateBtns()
         speechSynth.delegate = self
         
-        let defaultVoice = NSSpeechSynthesizer.defaultVoice()
+        let defaultVoice = preferenceManager.activeVoice!
         if let defaultRow = voices.indexOf(defaultVoice) {
             let indices = NSIndexSet(index: defaultRow)
             tableView.selectRowIndexes(indices, byExtendingSelection: false)
             tableView.scrollRowToVisible(defaultRow)
         }
+        
+        textField.stringValue = preferenceManager.activeText!
     }
     
     func voiceNameForIdentifier(identifier: String) -> String {
@@ -74,6 +77,12 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NST
         
         let voice = voices[row]
         speechSynth.setVoice(voice)
+        preferenceManager.activeVoice = voice
+    }
+    
+    // MARK: - NSTextFieldDelegate
+    override func controlTextDidChange(obj: NSNotification) {
+        preferenceManager.activeText = textField.stringValue
     }
     
     // MARK: - Actions

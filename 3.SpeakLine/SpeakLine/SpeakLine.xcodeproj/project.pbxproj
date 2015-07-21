@@ -12,6 +12,7 @@
 		634BFF5B1B5B49DA00BEEB01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634BFF591B5B49DA00BEEB01 /* MainMenu.xib */; };
 		634BFF641B5B4AF500BEEB01 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */; };
 		634BFF651B5B4AF500BEEB01 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */; };
+		63B3BF691B5E8A040011109F /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF681B5E8A040011109F /* PreferenceManager.swift */; };
 		63E139A21B5BC37F00694937 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63E139A11B5BC37F00694937 /* test.txt */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		634BFF5C1B5B49DA00BEEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		63B3BF681B5E8A040011109F /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		63E139A11B5BC37F00694937 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			children = (
 				634BFF551B5B49DA00BEEB01 /* AppDelegate.swift */,
 				634BFF621B5B4AF500BEEB01 /* MainWindowController.swift */,
+				63B3BF681B5E8A040011109F /* PreferenceManager.swift */,
 				634BFF631B5B4AF500BEEB01 /* MainWindowController.xib */,
 				63E139A11B5BC37F00694937 /* test.txt */,
 				634BFF571B5B49DA00BEEB01 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634BFF641B5B4AF500BEEB01 /* MainWindowController.swift in Sources */,
+				63B3BF691B5E8A040011109F /* PreferenceManager.swift in Sources */,
 				634BFF561B5B49DA00BEEB01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
