@@ -14,7 +14,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="xOd-HO-29H" userLabel="Window">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="496" height="201"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
@@ -33,7 +33,7 @@ CA
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="remove:" target="pfh-oE-Mam" id="Yoh-MJ-z8R"/>
+                            <action selector="removeEmployees:" target="-2" id="xWm-bI-2YC"/>
                             <binding destination="pfh-oE-Mam" name="enabled" keyPath="canRemove" id="ziY-kw-Mlb"/>
                         </connections>
                     </button>
@@ -43,7 +43,7 @@ CA
                             <rect key="frame" x="1" y="17" width="336" height="143"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="UlF-n7-G4S" viewBased="YES" id="ZRW-K4-yeu">
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="UlF-n7-G4S" viewBased="YES" id="ZRW-K4-yeu">
                                     <rect key="frame" x="0.0" y="0.0" width="336" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -167,7 +167,7 @@ CA
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
-            <point key="canvasLocation" x="109" y="230.5"/>
+            <point key="canvasLocation" x="214" y="317.5"/>
         </window>
         <arrayController objectClassName="RaiseMan.Employee" id="pfh-oE-Mam">
             <connections>
