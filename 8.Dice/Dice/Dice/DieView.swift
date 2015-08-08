@@ -17,6 +17,12 @@ class DieView: NSView {
         }
     }
     
+    var pressed: Bool = false {
+        didSet {
+            needsDisplay = true;
+        }
+    }
+    
     override var intrinsicContentSize: NSSize {
         return NSSize(width: 50, height: 50)
     }
@@ -33,7 +39,10 @@ class DieView: NSView {
         let edgeLength = min(size.width, size.height)
         let padding = edgeLength/10.0
         let drawingBounds = CGRect(x: 0, y: 0, width: edgeLength, height: edgeLength)
-        let dieFrame = drawingBounds.rectByInsetting(dx: padding, dy: padding)
+        var dieFrame = drawingBounds.rectByInsetting(dx: padding, dy: padding)
+        if pressed {
+            dieFrame = dieFrame.rectByOffsetting(dx: 0, dy: -edgeLength/40)
+        }
         return (edgeLength, dieFrame)
     }
     
@@ -48,7 +57,7 @@ class DieView: NSView {
             NSGraphicsContext.saveGraphicsState()
             let shadow = NSShadow()
             shadow.shadowOffset = NSSize(width: 0, height: -1)
-            shadow.shadowBlurRadius = edgeLength/20
+            shadow.shadowBlurRadius = (pressed ? edgeLength/100 : edgeLength/20)
             shadow.set()
             
             //Draw the rounded shape of the die profile
@@ -90,5 +99,29 @@ class DieView: NSView {
             }
         }
         
+    }
+    
+    func randomize() {
+        intValue = Int(arc4random_uniform(5)) + 1
+    }
+    
+    // MARK: - Mouse Events
+    override func mouseDown(theEvent: NSEvent) {
+        Swift.print("mouseDown")
+        let dieFrame = metricsForSize(bounds.size).dieFrame
+        let pointInView = convertPoint(theEvent.locationInWindow, fromView: nil)
+        pressed = dieFrame.contains(pointInView)
+    }
+    
+    override func mouseDragged(theEvent: NSEvent) {
+        Swift.print("mouseDragged location: \(theEvent.locationInWindow)")
+    }
+    
+    override func mouseUp(theEvent: NSEvent) {
+        Swift.print("mouseUp clickCount: \(theEvent.clickCount)")
+        if theEvent.clickCount == 2 {
+            randomize()
+        }
+        pressed = false
     }
 }
