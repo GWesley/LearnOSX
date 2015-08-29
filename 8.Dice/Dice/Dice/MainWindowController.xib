@@ -12,28 +12,29 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Dice" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="contentRect" x="196" y="240" width="368" height="144"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="144"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Zqt-e9-nTF" customClass="DieView" customModule="Dice" customModuleProvider="target">
-                        <rect key="frame" x="20" y="20" width="440" height="230"/>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqt-e9-nTF" customClass="DieView" customModule="Dice" customModuleProvider="target">
+                        <rect key="frame" x="20" y="20" width="104" height="104"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-a2-koG" customClass="DieView" customModule="Dice" customModuleProvider="target">
+                        <rect key="frame" x="132" y="20" width="104" height="104"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-lI-BwH" customClass="DieView" customModule="Dice" customModuleProvider="target">
+                        <rect key="frame" x="244" y="20" width="104" height="104"/>
                     </customView>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Zqt-e9-nTF" secondAttribute="bottom" constant="20" id="8cq-kc-Q6I"/>
-                    <constraint firstAttribute="trailing" secondItem="Zqt-e9-nTF" secondAttribute="trailing" constant="20" id="HL5-ld-KWu"/>
-                    <constraint firstItem="Zqt-e9-nTF" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="LaT-Gc-unF"/>
-                    <constraint firstItem="Zqt-e9-nTF" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="MI0-vK-CoU"/>
-                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="270" y="316"/>
         </window>
     </objects>
 </document>
