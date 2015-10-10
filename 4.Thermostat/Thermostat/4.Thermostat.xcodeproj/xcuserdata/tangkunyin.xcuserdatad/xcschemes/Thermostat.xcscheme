@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63E139AB1B5BD20500694937"
-               BuildableName = "Thermostat.app"
+               BuildableName = "4.Thermostat.app"
                BlueprintName = "4.Thermostat"
                ReferencedContainer = "container:4.Thermostat.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63E139AB1B5BD20500694937"
-            BuildableName = "Thermostat.app"
+            BuildableName = "4.Thermostat.app"
             BlueprintName = "4.Thermostat"
             ReferencedContainer = "container:4.Thermostat.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63E139AB1B5BD20500694937"
-            BuildableName = "Thermostat.app"
+            BuildableName = "4.Thermostat.app"
             BlueprintName = "4.Thermostat"
             ReferencedContainer = "container:4.Thermostat.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63E139AB1B5BD20500694937"
-            BuildableName = "Thermostat.app"
+            BuildableName = "4.Thermostat.app"
             BlueprintName = "4.Thermostat"
             ReferencedContainer = "container:4.Thermostat.xcodeproj">
          </BuildableReference>
