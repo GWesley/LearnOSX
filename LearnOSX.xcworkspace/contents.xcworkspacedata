@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/9.ImageTiling/ImageTiling/9.ImageTiling.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/8.Dice/Dice/8.Dice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/7.Chatter/Chatter/7.Chatter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/6.CarLot/CarLot/6.CarLot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/5.RaiseMan/RaiseMan/5.RaiseMan.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/4.Thermostat/Thermostat/4.Thermostat.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/3.SpeakLine/SpeakLine/3.SpeakLine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/2.RGBWell/RGBWell/2.RGBWell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tangkunyin/git-workspace/LearnOSX/1.RandomPassword/RandomPassword/1.RandomPassword.xcodeproj">
+   </FileRef>
 </Workspace>
